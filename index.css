@@ -1,0 +1,119 @@
+body,ul,li,h2,h3,div{margin:0;padding:0;border:0;}
+body{font-size:12px; font-family:"Microsoft YaHei";}
+ul{list-style-type:none;}
+a{text-decoration:none;}
+
+body{background:url(./images/bg.png) left top repeat;}
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+}
+.list{
+	text-align: center;
+	width:100%;
+	height:auto;
+	margin-top:10px;
+}
+.list li{
+	display:inline-block;
+	margin:5px;
+	height:80px;
+	background:#FFF;
+	box-shadow:2px 2px 4px rgba(0, 0, 0, 0.2);
+	-webkit-transition:0.3s all ease;
+	-moz-transition:0.3s all ease;
+	-ms-transition:0.3s all ease;
+	-o-transition:0.3s all ease;
+	transition:0.3s all ease;
+	overflow:hidden;
+	position:relative;
+}
+
+.list li:hover{
+	background:#BBB;
+	box-shadow:2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.text h2,.text a{
+	font-family:"Microsoft YaHei";
+	color:#333;
+	text-shadow:1px 2px 4px #999;
+	font-size:15px;
+	font-weight:normal;
+	-webkit-transition:0.3s all ease;
+	-moz-transition:0.3s all ease;
+	-ms-transition:0.3s all ease;
+	-o-transition:0.3s all ease;
+}
+.text h3{
+	font-family:Verdana;
+	font-size:20px;
+	color:#666;
+	text-align:right;
+	font-weight:normal;
+	-webkit-transition:0.3s all ease;
+	-moz-transition:0.3s all ease;
+	-ms-transition:0.3s all ease;
+	-o-transition:0.3s all ease;
+}
+.list li:hover h2,.list li:hover  a{
+	color:#FFF;
+	font-size:18px;
+	margin-top:5px;
+	text-shadow:1px 2px 4px #333;
+}
+.list li:hover .text h3{
+	text-align:right;
+	color:#F60;
+	font-size:25px;
+	margin-top:5px;
+	text-shadow:1px 2px 4px #FFF;
+}
+.list li .icon{
+	width:50px;
+	height:70px;
+	margin-left:10px;
+	margin-top:5px;
+	margin-right:10px;
+	float:left;
+	font-size:50px;
+	line-height:70px;
+	text-align:center;
+	-webkit-transition:0.3s all ease;
+	-moz-transition:0.3s all ease;
+	-ms-transition:0.3s all ease;
+	-o-transition:0.3s all ease;
+	text-shadow:0 0 3px #CCCCCC;
+}
+.list li:hover .icon{
+	color:#F90;
+	font-size:45px;
+	text-shadow:1px 2px 4px #FFF;
+}
+.list li:hover .text{
+	-webkit-animation-name:shake;
+	-moz-animation-name:shake;
+}
+.text{
+	float:right;
+	margin-right:10px;
+	margin-top:20px;
+	height:70px;
+	-webkit-animation:.5s .2s ease both;
+    -moz-animation:1s .2s ease both;
+}
+
+@-webkit-keyframes shake{
+0%,100%{-webkit-transform:translateX(0);}
+20%,60%{-webkit-transform:translateX(-2px);}
+40%,80%{-webkit-transform:translateX(2px);}
+}
+@-moz-keyframes shake{
+0%,100%{-moz-transform:translateX(0);}
+20%,60%{-moz-transform:translateX(-2px);}
+40%,80%{-moz-transform:translateX(2px);}
+}
+
+.footer {
+	font-size: 16px;
+	width: 280px;
+	margin: 30px auto;
